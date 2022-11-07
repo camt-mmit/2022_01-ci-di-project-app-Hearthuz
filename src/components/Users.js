@@ -22,8 +22,7 @@ function Users() {
             }
         }
         getUsers();
-    }, []);
-    console.log(users);
+    }, [token]);
 
     return (
         <div className="App">
