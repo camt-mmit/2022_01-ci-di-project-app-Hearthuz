@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.PUSH_MAIN }}
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
@@ -62,4 +62,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/my-react:lastest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/app:latest

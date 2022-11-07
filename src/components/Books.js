@@ -52,10 +52,10 @@ function Books() {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" className='text-white fs-5'>ID</th>
-                            <th scope="col" className='text-white fs-5'>Username</th>
-                            <th scope="col" className='text-white fs-5'>FirstName</th>
-                            <th scope="col" className='text-white fs-5'>LastName</th>
+                            <th scope="col" className='text-white fs-5'>ISBN</th>
+                            <th scope="col" className='text-white fs-5'>Title</th>
+                            <th scope="col" className='text-white fs-5'>Author</th>
+                            <th scope="col" className='text-white fs-5'>Price</th>
                         </tr>
                     </thead>
                     <tbody>
