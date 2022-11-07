@@ -20,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "react-scripts build --configuration production --basehref=/2022_01-ci-di-project-app-Hearthuz/ && cp ./build/index.html ./build/404.html && gh-pages -d ./build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
