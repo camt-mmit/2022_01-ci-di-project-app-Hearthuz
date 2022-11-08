@@ -13,12 +13,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - runs: |
+      - run: |
           git config --global user.email "${{ github.event.pusher.email }}"
           git config --global user.name "${{ github.actor }}" 
       - run: npm install
       - run: PUBLIC_URL=/${{ github.event.repository.name }} npm run build
-      - runs: |
+      - run: |
           mkdir ./gh-pages
           git init -b gh-pages ./gh-pages
           cd ./gh-pages
