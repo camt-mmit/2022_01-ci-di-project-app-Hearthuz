@@ -25,11 +25,11 @@ jobs:
           cd ./gh-pages
           git remote add -t gh-pages origin \
           https://git:${{ github.token }}@github.com/${{ github.repository }}.git
-          git fetch -u origin gh-pages:gh-pages || 0
+          git fetch -u origin gh-pages:gh-pages || echo ""
           rm -rf *
           cp -rf ../build/* ./
           git add .
-          git commit -m "Manually commit" || 0
+          git commit -m "Manually commit" || echo ""
           git push origin gh-pages
           cd ..
   push-docker-hub:
